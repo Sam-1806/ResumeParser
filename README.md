@@ -83,6 +83,7 @@ You can download the results as a `.csv` file.
 ---
 
 ## Folder Structure
+```bash
 resume-processor/
 ├── main.py                # Main script to run the Streamlit app
 ├── requirements.txt       # Dependencies for the project
@@ -91,6 +92,7 @@ resume-processor/
 │   └── extract_data.py    # Utility functions for data extraction
 ├── sample_resumes/        # Folder to store sample resume files
 └── README.md              # This readme file
+```
 
 ---
 
