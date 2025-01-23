@@ -13,7 +13,7 @@ The frontend is built with Streamlit, ensuring a user-friendly interface. The ba
    - **Name**
    - **Age**
    - **Education** (including degree and major, e.g., "Bachelor's in Computer Science").
-3. **Multi-Format Support**: Accepts `.pdf` and `.txt` files.
+3. **Multi-Format Support**: Accepts `.pdf` and `.docx` files.
 4. **Export to CSV**: Consolidates extracted data into a `results.csv` file.
 
 ---
@@ -30,27 +30,37 @@ The frontend is built with Streamlit, ensuring a user-friendly interface. The ba
 ```bash
 git clone https://github.com/Sam-1806/ResumeParser.git
 cd resume-processor
+```
 
 # Resume Processor
 
 ## Step 2: Create a Virtual Environment
+```bash
 python -m venv ResumeProcessor
-
+```
 ## Step 3: Activate the Virtual Environment
 
 ### Windows:
+```bash
 ResumeProcessor\Scripts\activate
+```
 
 ### macOS/Linux:
+```bash
 source ResumeProcessor/bin/activate
+```
 
 ## Step 4: Install Dependencies
 Install all required packages using the `requirements.txt` file:
+```bash
 pip install -r requirements.txt
+```
 
 ## Step 5: Download SpaCy Language Model
 SpaCy requires a pre-trained language model to extract entities. Run:
+```bash
 python -m spacy download en_core_web_sm
+```
 
 ---
 
@@ -58,7 +68,9 @@ python -m spacy download en_core_web_sm
 
 ### Step 1: Start the Application
 Run the Streamlit app:
+```bash
 streamlit run main.py
+```
 
 ### Step 2: Upload Resumes
 Open your browser and navigate to [http://localhost:8501/](http://localhost:8501/).
